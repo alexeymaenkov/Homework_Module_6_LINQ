@@ -102,7 +102,20 @@ public class LINQ_Practice
         // Сгруппировать items по Category и посчитать для каждой группы сумму Value
         // Используйте анонимные типы
         
-        //List<Item> items = …;
+        List<Item> items = new List<Item>
+        {
+            new Item { Category = "Food", Value = 10 },
+            new Item { Category = "Food", Value = 5 },
+            new Item { Category = "Tech", Value = 7 },
+            new Item { Category = "Tech", Value = 3 },
+            new Item { Category = "Clothes", Value = 8 }
+        };
+        
+        var result = items.GroupBy(item => item.Category).Select(g => new { Category = g.Key, Sum = g.Sum(x => x.Value) }).ToList();
+        
+        foreach (var x in result)
+            Console.WriteLine(x);
+        
         //-----------------------------------------------------------------------------------------------
         
         // Есть два списка List<int> a и List<int> b. Написать **два** выражения где:
@@ -121,7 +134,7 @@ public class LINQ_Practice
         */
         // Дана коллекция List<List<int>> listOfLists.
         // "Развернуть" её в одну плоскую последовательность IEnumerable<int>.
-        
+        /*
         List<int> a = new List<int>() { 10, 18, 9 };
         List<int> b = new List<int>() { 1, 9, 4 };
         List<int> c = new List<int>() { 1, 9, 4, 2 };
@@ -132,5 +145,6 @@ public class LINQ_Practice
         
         foreach (var x in result)
             Console.Write(x + " | ");
+        */
     }
 }
