@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_Module_6_LINQ", "Homework_Module_6_LINQ\Homework_Module_6_LINQ.csproj", "{6422F176-05E4-4DC3-BE07-F2EDBFCA6319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6422F176-05E4-4DC3-BE07-F2EDBFCA6319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6422F176-05E4-4DC3-BE07-F2EDBFCA6319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6422F176-05E4-4DC3-BE07-F2EDBFCA6319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6422F176-05E4-4DC3-BE07-F2EDBFCA6319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
