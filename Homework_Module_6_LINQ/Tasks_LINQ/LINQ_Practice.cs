@@ -31,7 +31,7 @@ public class LINQ_Practice
 
         List<string> words = new List<string>() { "one", "two", "three", "four", "five", "six" };
 
-        var wordsLength = words.Select(word => word.ToUpper()).Select(word => word.Length);
+        var wordsLength = words.Select(word => word.ToUpper().Length);
 
         foreach (var word in wordsLength)
             Console.Write(word + " | ");
@@ -53,7 +53,7 @@ public class LINQ_Practice
         List<string> emails = new List<string>()
             { "one@mail.ru", "two@yandex.ru", "three@arcanum.com", "four@gmail.com", "five@gmail.com" };
 
-        var gmail = emails.FirstOrDefault(email => email.Contains("@gmail.com"));
+        var gmail = emails.FirstOrDefault(email => email.EndsWith("@gmail.com"));
 
         Console.WriteLine(gmail);
 
